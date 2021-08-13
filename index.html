@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+      <section id="formmain">
+
+        <div class="name">
+          <h4>Name</h4><span class="star"><sup>*</sup></span><br>
+          <form id="firstform">
+
+              <div class="form-group" id="form-group1">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="john">
+                <label for="formGroupExampleInput">First</label>
+              </div>
+
+              <div class="form-group" id="form-group2">
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="durai">
+                <label for="formGroupExampleInput2">Last</label>
+              </div>
+
+            </form>
+         </div>
+
+        <div class="email">
+          <h4>Email</h4><span class="star"><sup>*</sup></span>
+          <input class="form-control" name="emailbox" type="text" placeholder="johndurai@gmail.com">
+        </div> 
+
+        <div class="experience">
+          <h4>Your Experience</h4><span class="star"><sup>*</sup></span>
+        </div>
+
+        <div class="rate">
+          <input type="radio" name="radiobtn" id="star1"><label for="star1"></label>
+          <input type="radio" name="radiobtn" id="star2"><label for="star2"></label>
+          <input type="radio" name="radiobtn" id="star3"><label for="star3"></label>
+          <input type="radio" name="radiobtn" id="star4"><label for="star4"></label>
+          <input type="radio" name="radiobtn" id="star5"><label for="star5"></label>
+        </div>
+
+        <div class="table table-striped">
+          <h4>How satisfied are you with</h4><span class="star"><sup>*</sup></span>
+            <table id="tablesection">
+                <tr>
+                  <td></td>
+                  <td>Very Unsatisfied</td>
+                  <td>Unsatisfied</td>
+                  <td>Neutral</td>
+                  <td>Satisfied</td>
+                  <td>Very Satisfied</td>
+                </tr>
+                <tr>
+                  <td>Purchase</td>
+                  <td><input type="radio" name="purchaseradio"></td>
+                  <td><input type="radio" name="purchaseradio"></td>
+                  <td><input type="radio" name="purchaseradio"></td>
+                  <td><input type="radio" name="purchaseradio"></td>
+                  <td><input type="radio" name="purchaseradio"></td>
+                </tr>
+                <tr>
+                  <td>Service</td>
+                  <td><input type="radio" name="serviceradio"></td>
+                  <td><input type="radio" name="serviceradio"></td>
+                  <td><input type="radio" name="serviceradio"></td>
+                  <td><input type="radio" name="serviceradio"></td>
+                  <td><input type="radio" name="serviceradio"></td>
+                </tr>
+                <tr>
+                  <td>Company Overall</td>
+                  <td><input type="radio" name="overallradio"></td>
+                  <td><input type="radio" name="overallradio"></td>
+                  <td><input type="radio" name="overallradio"></td>
+                  <td><input type="radio" name="overallradio"></td>
+                  <td><input type="radio" name="overallradio"></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="table table-striped">
+          <h4>How likely are you to</h4><span class="star"><sup>*</sup></span>
+            <table id="tablesection">
+                <tr>
+                  <td class="constrict"></td>
+                  <td>Very unlikely</td>
+                  <td>Unlikely</td>
+                  <td>Neutral</td>
+                  <td>Likely</td>
+                  <td>Very Likely</td>
+                </tr>
+                <tr>
+                  <td >Buy from us again</td>
+                  <td><input type="radio" name="purchaseradio"></td>
+                  <td><input type="radio" name="purchaseradio"></td>
+                  <td><input type="radio" name="purchaseradio"></td>
+                  <td><input type="radio" name="purchaseradio"></td>
+                  <td><input type="radio" name="purchaseradio"></td>
+                </tr>
+                <tr>
+                  <td>Recommend or product to others</td>
+                  <td><input type="radio" name="serviceradio"></td>
+                  <td><input type="radio" name="serviceradio"></td>
+                  <td><input type="radio" name="serviceradio"></td>
+                  <td><input type="radio" name="serviceradio"></td>
+                  <td><input type="radio" name="serviceradio"></td>
+                </tr>
+                <tr>
+                  <td>Recommend our company to others</td>
+                  <td><input type="radio" name="overallradio"></td>
+                  <td><input type="radio" name="overallradio"></td>
+                  <td><input type="radio" name="overallradio"></td>
+                  <td><input type="radio" name="overallradio"></td>
+                  <td><input type="radio" name="overallradio"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="comments">
+          <h4>Additional comments or suggestions</h4><br>
+          <textarea class="form-control" name="textarea" id="" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="submit">
+          <button type="button" id="btn"class="btn btn-light">Submit</button>
+        </div>
+
+      </section>
+    </div>
+
+    <script src="function.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>
