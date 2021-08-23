@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey-Form</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid">
-      <section id="formmain">
+      <section id="formmain" class="outerlayout">
 
         <div class="name">
-          <h4>Name</h4><span class="star"><sup>*</sup></span><br>
+          <h4 class="nametitle">Name</h4><span class="star"><sup>*</sup></span><br>
           <form id="firstform">
 
               <div class="form-group" id="form-group1">
@@ -40,15 +40,18 @@
         </div>
 
         <div class="rate">
-          <input type="radio" name="radiobtn" id="star1"><label for="star1"></label>
-          <input type="radio" name="radiobtn" id="star2"><label for="star2"></label>
-          <input type="radio" name="radiobtn" id="star3"><label for="star3"></label>
-          <input type="radio" name="radiobtn" id="star4"><label for="star4"></label>
-          <input type="radio" name="radiobtn" id="star5"><label for="star5"></label>
+          <input type="radio" name="radiobtn" id="star1"><label for="star1" required></label>
+          <input type="radio" name="radiobtn" id="star2"><label for="star2" required></label>
+          <input type="radio" name="radiobtn" id="star3"><label for="star3" required></label>
+          <input type="radio" name="radiobtn" id="star4"><label for="star4" required></label>
+          <input type="radio" name="radiobtn" id="star5"><label for="star5" required></label>
         </div>
 
-        <div class="table table-striped">
-          <h4>How satisfied are you with</h4><span class="star"><sup>*</sup></span>
+        <div class="table table-striped tableman col-sm-9 col-md-10 col-lg-12 col-xl-12">
+          <div class="table1head">
+            <h4 class="table1head">How satisfied are you with</h4>
+            <span class="star"><sup>*</sup></span>
+          </div>
             <table id="tablesection">
                 <tr>
                   <td></td>
@@ -59,7 +62,7 @@
                   <td>Very Satisfied</td>
                 </tr>
                 <tr>
-                  <td>Purchase</td>
+                  <td class="col-2">Purchase</td>
                   <td><input type="radio" name="purchaseradio"></td>
                   <td><input type="radio" name="purchaseradio"></td>
                   <td><input type="radio" name="purchaseradio"></td>
@@ -67,7 +70,7 @@
                   <td><input type="radio" name="purchaseradio"></td>
                 </tr>
                 <tr>
-                  <td>Service</td>
+                  <td class="col-2">Service</td>
                   <td><input type="radio" name="serviceradio"></td>
                   <td><input type="radio" name="serviceradio"></td>
                   <td><input type="radio" name="serviceradio"></td>
@@ -75,7 +78,7 @@
                   <td><input type="radio" name="serviceradio"></td>
                 </tr>
                 <tr>
-                  <td>Company Overall</td>
+                  <td class="col-2">Company Overall</td>
                   <td><input type="radio" name="overallradio"></td>
                   <td><input type="radio" name="overallradio"></td>
                   <td><input type="radio" name="overallradio"></td>
@@ -86,7 +89,7 @@
         </div>
 
 
-        <div class="table table-striped">
+        <div class="table table-striped col-sm-12 col-lg-12 col-xl-12">
           <h4>How likely are you to</h4><span class="star"><sup>*</sup></span>
             <table id="tablesection">
                 <tr>
@@ -98,7 +101,7 @@
                   <td>Very Likely</td>
                 </tr>
                 <tr>
-                  <td >Buy from us again</td>
+                  <td class="col-2">Buy from us again</td>
                   <td><input type="radio" name="purchaseradio"></td>
                   <td><input type="radio" name="purchaseradio"></td>
                   <td><input type="radio" name="purchaseradio"></td>
@@ -106,7 +109,7 @@
                   <td><input type="radio" name="purchaseradio"></td>
                 </tr>
                 <tr>
-                  <td>Recommend or product to others</td>
+                  <td class="col-2">Recommend or product to others</td>
                   <td><input type="radio" name="serviceradio"></td>
                   <td><input type="radio" name="serviceradio"></td>
                   <td><input type="radio" name="serviceradio"></td>
@@ -114,7 +117,7 @@
                   <td><input type="radio" name="serviceradio"></td>
                 </tr>
                 <tr>
-                  <td>Recommend our company to others</td>
+                  <td class="col-2">Recommend our company to others</td>
                   <td><input type="radio" name="overallradio"></td>
                   <td><input type="radio" name="overallradio"></td>
                   <td><input type="radio" name="overallradio"></td>
@@ -124,7 +127,7 @@
             </table>
         </div>
 
-        <div class="comments">
+        <div class="comments col-sm-12">
           <h4>Additional comments or suggestions</h4><br>
           <textarea class="form-control" name="textarea" id="" cols="30" rows="5"></textarea>
         </div>

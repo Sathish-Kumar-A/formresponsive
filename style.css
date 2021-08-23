@@ -1,17 +1,13 @@
 
 #formmain{
-    width:80%;
-    padding:40px;
+    padding-top:30px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    padding-right: 30px;
     background-color: white;
     margin: 0 auto;
     box-shadow: 0 0px 10px rgba(50,50,50,0.1);
     border-radius: 10px;
-}
-#formGroupExampleInput{
-    width:120%;
-}
-#formGroupExampleInput2{
-    width:120%;
 }
 
 #form-group1{
@@ -21,31 +17,39 @@
     position:relative;
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     
 }
+.nametitle{
+    margin-left: 15px;
+}
 h4{
-    display: inline-block;
+    display: inline;
 }
 .star{
     color:red;
     font-size: 20px;
 }
 #firstform{
-    width:100%;
     display:flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 15px;
 }
-input[name="emailbox"]{
-    width:67%;
+.email{
+    margin-left: 15px;
 }
 .experience{
     margin-top: 20px;
     position: relative;
+    margin-left: 15px;
 }
 /* rating */
 .rate{
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     transform: rotateY(180deg);
 }
 .rate input{
@@ -53,7 +57,7 @@ input[name="emailbox"]{
 }
 .rate label{
     display: block;
-    width:50px;
+    width:40px;
     height:20px;
     cursor: pointer;
     position: relative;
@@ -81,22 +85,25 @@ input[name="emailbox"]{
 .rate label:hover:after,.rate label:hover ~ label:after,.rate input:checked ~ label:after{
     opacity:1;
 }
-
+.table1head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .table{
     margin-top:50px;
 }
-
+/* .tableman{
+    display: grid;
+    grid-template-columns: 1fr;
+} */
 #tablesection tr td{
     text-align: center;
 }
-#tablesection,.comments{
-    width:97%;
-}
-.constrict{
-    width:190px;
-}
+
 #btn{
     margin-top: 10px;
     margin-bottom: 50px;
     background-color: rgb(194, 190, 190);
+    margin-left: 15px;
 }
